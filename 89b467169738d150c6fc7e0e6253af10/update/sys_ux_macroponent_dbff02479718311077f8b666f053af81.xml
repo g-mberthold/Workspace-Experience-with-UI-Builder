@@ -244,7 +244,7 @@
                       "value" : "searchTerm"
                     },
                     "value" : {
-                      "type" : "STATE_BINDING",
+                      "type" : "EVENT_PAYLOAD_BINDING",
                       "binding" : {
                         "address" : [ "searchTerm" ]
                       }
@@ -265,8 +265,19 @@
           },
           "overrides" : null,
           "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
+            "type" : "CLIENT_TRANSFORM",
+            "transform" : {
+              "operands" : {
+                "type" : "LIST_CONTAINER",
+                "container" : [ {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "searchTerm" ]
+                  }
+                } ]
+              },
+              "operator" : "EMPTY"
+            }
           },
           "isHero" : false,
           "extensionPoints" : [ ],
@@ -1314,14 +1325,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-01 12:43:05</sys_created_on>
         <sys_id>dbff02479718311077f8b666f053af81</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Dispatcher home</sys_name>
         <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
         <sys_update_name>sys_ux_macroponent_dbff02479718311077f8b666f053af81</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-02 09:21:56</sys_updated_on>
+        <sys_updated_on>2023-08-02 12:34:26</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=dbff02479718311077f8b666f053af81"/>
 </record_update>

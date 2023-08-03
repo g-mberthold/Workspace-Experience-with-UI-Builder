@@ -1158,12 +1158,132 @@
                     "type" : "MACROPONENT"
                   },
                   "overrides" : {
-                    "composition" : [ ],
+                    "composition" : [ {
+                      "elementId" : "stylized_text_10",
+                      "elementLabel" : "Stylized text 10",
+                      "propertyValues" : {
+                        "css" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "* { }"
+                        },
+                        "text" : {
+                          "type" : "TRANSLATION_LITERAL",
+                          "value" : {
+                            "code" : null,
+                            "message" : "Parts",
+                            "comment" : ""
+                          }
+                        },
+                        "tag" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "h1"
+                        }
+                      },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type" : "MACROPONENT"
+                      },
+                      "overrides" : null,
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "styles" : null
+                    }, {
+                      "elementId" : "repeater_3",
+                      "elementLabel" : "Repeater 3",
+                      "propertyValues" : { },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "",
+                        "type" : "REPEATER"
+                      },
+                      "overrides" : {
+                        "composition" : [ {
+                          "elementId" : "stylized_text_11",
+                          "elementLabel" : "Stylized text 11",
+                          "propertyValues" : {
+                            "css" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "* { }"
+                            },
+                            "text" : {
+                              "type" : "CLIENT_TRANSFORM",
+                              "transform" : {
+                                "operands" : {
+                                  "type" : "LIST_CONTAINER",
+                                  "container" : [ {
+                                    "type" : "REPEATER_ITEM_BINDING",
+                                    "binding" : {
+                                      "address" : [ "serialNumber" ],
+                                      "category" : "value"
+                                    }
+                                  }, {
+                                    "type" : "JSON_LITERAL",
+                                    "value" : ": "
+                                  }, {
+                                    "type" : "REPEATER_ITEM_BINDING",
+                                    "binding" : {
+                                      "address" : [ "partName" ],
+                                      "category" : "value"
+                                    }
+                                  } ]
+                                },
+                                "operator" : "CONCAT"
+                              }
+                            },
+                            "tag" : {
+                              "type" : "JSON_LITERAL",
+                              "value" : "h3"
+                            }
+                          },
+                          "eventMappings" : [ ],
+                          "slot" : null,
+                          "definition" : {
+                            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                            "type" : "MACROPONENT"
+                          },
+                          "overrides" : null,
+                          "isHidden" : {
+                            "type" : "JSON_LITERAL",
+                            "value" : null
+                          },
+                          "isHero" : false,
+                          "extensionPoints" : [ ],
+                          "isNonDestructive" : false,
+                          "items" : [ ],
+                          "styles" : { }
+                        } ],
+                        "layout" : null
+                      },
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "repeatWith" : {
+                        "type" : "DATA_OUTPUT_BINDING",
+                        "binding" : {
+                          "address" : [ "get_related_vehicle_info_gql_1", "output", "data", "xSncFltMgmt", "fleet", "vehicle", "parts" ]
+                        }
+                      },
+                      "styles" : null
+                    } ],
                     "layout" : {
                       "default" : {
                         "children" : null,
                         "isInline" : null,
-                        "items" : [],
+                        "items" : [{"element_id":"stylized_text_10","styles":{}},{"element_id":"repeater_3","styles":{}}],
                         "root" : null,
                         "rules" : null,
                         "styles" : {"flex-direction":"column"},
@@ -5244,6 +5364,9 @@
   "message" : "Next Tire Rotation:",
   "comment" : ""
 }, {
+  "message" : "Parts",
+  "comment" : ""
+}, {
   "message" : "Record not found",
   "comment" : ""
 }, {
@@ -5270,14 +5393,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-03 10:04:52</sys_created_on>
         <sys_id>05febfa39790311077f8b666f053afd0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Vehicle Record</sys_name>
         <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
         <sys_update_name>sys_ux_macroponent_05febfa39790311077f8b666f053afd0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-03 13:35:27</sys_updated_on>
+        <sys_updated_on>2023-08-03 14:34:15</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=05febfa39790311077f8b666f053afd0"/>
 </record_update>

@@ -493,7 +493,7 @@
                   "extensionPoints" : [ ],
                   "isNonDestructive" : false,
                   "items" : [ ],
-                  "styles" : { }
+                  "styles" : null
                 }, {
                   "elementId" : "container_3",
                   "elementLabel" : "Container 3",
@@ -536,7 +536,7 @@
                   "overrides" : {
                     "composition" : [ {
                       "elementId" : "stylized_text_1",
-                      "elementLabel" : "Stylized text 1",
+                      "elementLabel" : "Stylized Mileage",
                       "propertyValues" : {
                         "css" : {
                           "type" : "JSON_LITERAL",
@@ -570,7 +570,7 @@
                       "extensionPoints" : [ ],
                       "isNonDestructive" : false,
                       "items" : [ ],
-                      "styles" : { }
+                      "styles" : null
                     }, {
                       "elementId" : "stylized_text_2",
                       "elementLabel" : "Stylized text 2",
@@ -605,13 +605,157 @@
                       "extensionPoints" : [ ],
                       "isNonDestructive" : false,
                       "items" : [ ],
-                      "styles" : { }
+                      "styles" : null
+                    }, {
+                      "elementId" : "stylized_text_6",
+                      "elementLabel" : "Stylized Tire Rotation",
+                      "propertyValues" : {
+                        "css" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "* { }"
+                        },
+                        "text" : {
+                          "type" : "TRANSLATION_LITERAL",
+                          "value" : {
+                            "code" : null,
+                            "message" : "Next Tire Rotation:",
+                            "comment" : ""
+                          }
+                        },
+                        "tag" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "h2"
+                        }
+                      },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type" : "MACROPONENT"
+                      },
+                      "overrides" : null,
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "styles" : null
+                    }, {
+                      "elementId" : "stylized_text_5",
+                      "elementLabel" : "Stylized text 5",
+                      "propertyValues" : {
+                        "css" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "* { }"
+                        },
+                        "text" : {
+                          "type" : "DATA_OUTPUT_BINDING",
+                          "binding" : {
+                            "address" : [ "record", "form", "fields", "next_tire_rotation", "displayValue" ]
+                          }
+                        },
+                        "tag" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "h2"
+                        }
+                      },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type" : "MACROPONENT"
+                      },
+                      "overrides" : null,
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "styles" : null
+                    }, {
+                      "elementId" : "stylized_text_4",
+                      "elementLabel" : "Stylized Oil Change",
+                      "propertyValues" : {
+                        "css" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "* { }"
+                        },
+                        "text" : {
+                          "type" : "TRANSLATION_LITERAL",
+                          "value" : {
+                            "code" : null,
+                            "message" : "Next Oil Change:",
+                            "comment" : ""
+                          }
+                        },
+                        "tag" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "h2"
+                        }
+                      },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type" : "MACROPONENT"
+                      },
+                      "overrides" : null,
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "styles" : null
+                    }, {
+                      "elementId" : "stylized_text_3",
+                      "elementLabel" : "Stylized text 3",
+                      "propertyValues" : {
+                        "css" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "* { }"
+                        },
+                        "text" : {
+                          "type" : "DATA_OUTPUT_BINDING",
+                          "binding" : {
+                            "address" : [ "record", "form", "fields", "next_oil_change", "displayValue" ]
+                          }
+                        },
+                        "tag" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "h2"
+                        }
+                      },
+                      "eventMappings" : [ ],
+                      "slot" : null,
+                      "definition" : {
+                        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                        "type" : "MACROPONENT"
+                      },
+                      "overrides" : null,
+                      "isHidden" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : null
+                      },
+                      "isHero" : false,
+                      "extensionPoints" : [ ],
+                      "isNonDestructive" : false,
+                      "items" : [ ],
+                      "styles" : null
                     } ],
                     "layout" : {
                       "default" : {
                         "children" : null,
                         "isInline" : null,
-                        "items" : [{"element_id":"stylized_text_1","styles":{}},{"element_id":"stylized_text_2","styles":{}}],
+                        "items" : [{"element_id":"stylized_text_1","styles":{}},{"element_id":"stylized_text_2","styles":{}},{"element_id":"stylized_text_6","styles":{}},{"element_id":"stylized_text_5","styles":{}},{"element_id":"stylized_text_4","styles":{}},{"element_id":"stylized_text_3","styles":{}}],
                         "root" : null,
                         "rules" : null,
                         "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr"},
@@ -629,15 +773,13 @@
                   "extensionPoints" : [ ],
                   "isNonDestructive" : false,
                   "items" : [ ],
-                  "styles" : {
-                    "width" : "100%"
-                  }
+                  "styles" : null
                 } ],
                 "layout" : {
                   "default" : {
                     "children" : null,
                     "isInline" : null,
-                    "items" : [{"element_id":"image_1","styles":{}},{"element_id":"container_3","styles":{}}],
+                    "items" : [{"element_id":"image_1","styles":{}},{"element_id":"container_3","styles":{"width":"100%"}}],
                     "root" : null,
                     "rules" : null,
                     "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr"},
@@ -655,9 +797,7 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "width" : "100%"
-              }
+              "styles" : null
             }, {
               "elementId" : "container_2",
               "elementLabel" : "Related Record Info",
@@ -721,15 +861,13 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "width" : "100%"
-              }
+              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"container_1","styles":{}},{"element_id":"container_2","styles":{}}],
+                "items" : [{"element_id":"container_1","styles":{"width":"100%"}},{"element_id":"container_2","styles":{"width":"100%"}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"flex-direction":"column","padding":"var(--now-static-space--lg)"},
@@ -4733,6 +4871,12 @@
   "message" : "Mileage:",
   "comment" : ""
 }, {
+  "message" : "Next Oil Change:",
+  "comment" : ""
+}, {
+  "message" : "Next Tire Rotation:",
+  "comment" : ""
+}, {
   "message" : "Record not found",
   "comment" : ""
 }, {
@@ -4759,14 +4903,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-03 10:04:52</sys_created_on>
         <sys_id>05febfa39790311077f8b666f053afd0</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Vehicle Record</sys_name>
         <sys_package display_value="Fleet Vehicle Management" source="x_snc_flt_mgmt">89b467169738d150c6fc7e0e6253af10</sys_package>
         <sys_policy/>
         <sys_scope display_value="Fleet Vehicle Management">89b467169738d150c6fc7e0e6253af10</sys_scope>
         <sys_update_name>sys_ux_macroponent_05febfa39790311077f8b666f053afd0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-03 11:00:07</sys_updated_on>
+        <sys_updated_on>2023-08-03 13:43:31</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=05febfa39790311077f8b666f053afd0"/>
 </record_update>
